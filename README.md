@@ -2,3 +2,4 @@
 * code practice for Udemy course "C# 11 - Ultimate Guide - Beginner to Advanced | Master class"
 * course url: https://www.udemy.com/course/c-sharp-oop-ultimate-guide-project-master-class/
 
+![Course screenshot](20250131_110409_qfp.png)
