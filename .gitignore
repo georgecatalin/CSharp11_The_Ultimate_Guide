@@ -1,0 +1,49 @@
+# Ignore Visual Studio-specific files
+.vs/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# Package directories
+packages/
+node_modules/
+
+# Visual Studio Code settings
+.vscode/
+
+# Auto-generated files
+*.cache
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# Rider files
+.idea/
+*.iml
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
