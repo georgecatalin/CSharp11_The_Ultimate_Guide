@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCollection_IList_T", "CustomCollection_IList_T.csproj", "{8FA43863-076F-4AA9-9431-B90CAC9F6841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCollectionLib", "..\CustomCollectionLib\CustomCollectionLib.csproj", "{5771C65C-0D43-4076-97E5-6F9D55F9E97D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FA43863-076F-4AA9-9431-B90CAC9F6841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA43863-076F-4AA9-9431-B90CAC9F6841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA43863-076F-4AA9-9431-B90CAC9F6841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA43863-076F-4AA9-9431-B90CAC9F6841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5771C65C-0D43-4076-97E5-6F9D55F9E97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5771C65C-0D43-4076-97E5-6F9D55F9E97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5771C65C-0D43-4076-97E5-6F9D55F9E97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5771C65C-0D43-4076-97E5-6F9D55F9E97D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
