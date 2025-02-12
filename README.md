@@ -2,7 +2,7 @@
 * code practice for Udemy course "C# 11 - Ultimate Guide - Beginner to Advanced | Master class"
 * course url: https://www.udemy.com/course/c-sharp-oop-ultimate-guide-project-master-class/  
 
-##List of topics to cover ##
+## List of topics to cover ##
 
    - .Net Basics: Introduction to .NET, CLI, CLR, .NET Framework Architecture, Versions of .Net Framework, Overview of .Net Core, Introduction to Visual Studio, Basics of C#
 
