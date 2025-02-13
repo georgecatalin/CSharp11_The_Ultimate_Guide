@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleClass", "TupleClass.csproj", "{97B3E6F7-07F0-41B8-B770-62BE895731CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleClassLib", "..\TupleClassLib\TupleClassLib.csproj", "{356BB5BA-E971-4CE8-A1B3-1B2760DB3DBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97B3E6F7-07F0-41B8-B770-62BE895731CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B3E6F7-07F0-41B8-B770-62BE895731CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B3E6F7-07F0-41B8-B770-62BE895731CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B3E6F7-07F0-41B8-B770-62BE895731CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356BB5BA-E971-4CE8-A1B3-1B2760DB3DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356BB5BA-E971-4CE8-A1B3-1B2760DB3DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356BB5BA-E971-4CE8-A1B3-1B2760DB3DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356BB5BA-E971-4CE8-A1B3-1B2760DB3DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
