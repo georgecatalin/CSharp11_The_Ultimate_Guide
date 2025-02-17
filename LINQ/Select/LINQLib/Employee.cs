@@ -8,4 +8,8 @@
         public string City { get; set; }
     }
 
+    public class Person
+    {
+        public string PersonName { get; set; }
+    }
 }
