@@ -30,6 +30,21 @@ namespace MathExamples
             double rounddecimals = Math.Round(10.534567,3); //10.535
             Console.WriteLine("Math.Round(10.534567) -> " + rounddecimals);
 
+            int sign_minus = Math.Sign(-24.67);
+            int sign_positive = Math.Sign(26.89);
+            int sign_zero = Math.Sign(0);
+
+            int remainder;
+            int quotient = Math.DivRem(10,3,out remainder);
+            Console.WriteLine($"The quotient is {quotient} and the remainder {remainder} .");
+
+            double root = Math.Sqrt(25.67);
+            Console.WriteLine("The root is " + root);
+
+
+
+            Console.WriteLine($"The signs are : {sign_minus} {sign_positive} {sign_zero} ");
+
             Console.ReadKey();
         }
     }
