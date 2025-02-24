@@ -1,1 +1,0 @@
-These Macs will not get security updates following the removal of support for Monterey: iMac (models from 2015) MacBook Air (models from 2015 and 2017 models) MacBook Pro (2015 and 2016 models)
