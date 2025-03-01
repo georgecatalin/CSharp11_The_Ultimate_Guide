@@ -13,7 +13,7 @@ namespace BinaryWriterClass
             int age = 46;
             string job = "Project Manager";
 
-            string filePath = @"D:\Training\CSharp11_The_Ultimate_Guide\Using System.IO namespace\practice_here\binaryfile.txt";
+            string filePath = @"E:\Training\CSharp11_The_Ultimate_Guide\Using System.IO namespace\practice_here\binaryfile.txt";
 
             //create an object of the BinaryWriter() class using the constructor with the FileStream() object
             FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write);
