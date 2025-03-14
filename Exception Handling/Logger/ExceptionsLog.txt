@@ -9,3 +9,14 @@ Exception StackTrace:
 
 Exception Message: 
 This is called from the inner method. The account value is 1000 and you wish to transfer 2000 
+This error was caught on 14.03.2025 17:14:08
+
+Exception Type:
+ExceptionLogger.InsufficientFundsException
+
+Exception StackTrace: 
+   at ExceptionLogger.TransferFunds.TransferFund(Account sourceAccount, Account destinationAccount, Double amount) in D:\Training\CSharp11_The_Ultimate_Guide\Exception Handling\System.Exception\TransferFunds.cs:line 23
+   at ExceptionLogger.Program.Main(String[] args) in D:\Training\CSharp11_The_Ultimate_Guide\Exception Handling\System.Exception\Program.cs:line 20
+
+Exception Message: 
+This is called from the inner method. The account value is 1000 and you wish to transfer 2000 
