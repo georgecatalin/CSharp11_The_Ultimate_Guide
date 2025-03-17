@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using BankProject.Entities;
 
-namespace BankProject.DataAccessLayer.DALContracts
+namespace BankProject.BusinessLogicLayer.BLLContracts
 {
     /// <summary>
-    /// An interface that represents customers data access layer
+    /// An interface that represents Customer Business Logic Layer
     /// </summary>
-    public interface ICustomerDataAccessLayer
+    public interface ICustomerBusinessLogicLayer
     {
         /// <summary>
         /// Returns the list of all customers
@@ -43,5 +43,7 @@ namespace BankProject.DataAccessLayer.DALContracts
         /// <param name="customerid">the unique identifier of the customer to be deleted</param>
         /// <returns>Returns true if the customer as deleted successfully, false if the customer was not deleted successfully   </returns>
         bool DeleteCustomer(Guid customerid);
+
+
     }
 }

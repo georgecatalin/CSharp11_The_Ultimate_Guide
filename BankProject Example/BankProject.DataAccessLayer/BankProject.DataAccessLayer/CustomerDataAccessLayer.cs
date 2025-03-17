@@ -34,12 +34,25 @@ namespace BankProject.DataAccessLayer
         /// <returns>Returns the list of all customers</returns>
         public List<Customer> GetCustomers()
         {
-            //create a new list
-            List<Customer> customerList = new List<Customer>();
+            try
+            {
+                //create a new list
+                List<Customer> customerList = new List<Customer>();
 
-           Customers.ForEach(customer => customerList.Add(customer.Clone() as Customer));
+                Customers.ForEach(customer => customerList.Add(customer.Clone() as Customer));
 
-           return customerList;
+                return customerList;
+            }
+            catch(CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+           
         }
         /// <summary>
         /// Return the set of customers that meet a certain criteria
@@ -48,11 +61,23 @@ namespace BankProject.DataAccessLayer
         /// <returns>Returns the list of customers that meet the condition</returns>
         public List<Customer> GetCustomersByCondition(Predicate<Customer> predicate)
         {
-            List<Customer> customerList = new List<Customer>();
-            Customers.ForEach(customer => customerList.Add(customer.Clone() as Customer));
+            try
+            {
+                List<Customer> customerList = new List<Customer>();
+                Customers.ForEach(customer => customerList.Add(customer.Clone() as Customer));
 
-            List<Customer> filteredCustomerList = customerList.FindAll(predicate);
-            return filteredCustomerList;
+                List<Customer> filteredCustomerList = customerList.FindAll(predicate);
+                return filteredCustomerList;
+            }
+            catch(CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+          
         }
 
         /// <summary>
@@ -62,13 +87,25 @@ namespace BankProject.DataAccessLayer
         /// <returns>Returns the guid of the newly created customer</returns>
         public Guid AddCustomer(Customer customer)
         {
-            //generate a new Guid
-            customer.CustomerId = Guid.NewGuid();
+            try
+            {
+                //generate a new Guid
+                customer.CustomerId = Guid.NewGuid();
 
-            //add the new customer to the Customers collection
-            Customers.Add(customer);
+                //add the new customer to the Customers collection
+                Customers.Add(customer);
 
-            return customer.CustomerId;
+                return customer.CustomerId;
+            }
+            catch(CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+           
         }
         /// <summary>
         /// Updates the details of an existing customer
@@ -77,24 +114,36 @@ namespace BankProject.DataAccessLayer
         /// <returns>Returns true of the customer was updated successfully, false if the customer was not updated successfully.</returns>
         public bool UpdateCustomer(Customer customer)
         {
-            //find the customer which needs to be updates
-            Customer? findCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
+            try
+            {
+                //find the customer which needs to be updates
+                Customer? findCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
 
-            if(findCustomer !=null)
-            {
-                findCustomer.CustomerCode = customer.CustomerCode;
-                findCustomer.CustomerName = customer.CustomerName;
-                findCustomer.Address = customer.Address;
-                findCustomer.City = customer.City;
-                findCustomer.Country = customer.Country;
-                findCustomer.Landmark = customer.Landmark;
-                findCustomer.Mobile = customer.Mobile;
-                return true;
+                if (findCustomer != null)
+                {
+                    findCustomer.CustomerCode = customer.CustomerCode;
+                    findCustomer.CustomerName = customer.CustomerName;
+                    findCustomer.Address = customer.Address;
+                    findCustomer.City = customer.City;
+                    findCustomer.Country = customer.Country;
+                    findCustomer.Landmark = customer.Landmark;
+                    findCustomer.Mobile = customer.Mobile;
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch(CustomerException)
             {
-                return false;
+                throw;
             }
+            catch (Exception)
+            {
+                throw;
+            }
+           
         }
         /// <summary>
         /// Deletes a customer whose customerid is provided
@@ -103,15 +152,25 @@ namespace BankProject.DataAccessLayer
         /// <returns>Returns true if the deletion was successful, false if the deletion was unsuccessful</returns>
         public bool DeleteCustomer(Guid customerid)
         {
-            if(Customers.RemoveAll(item => item.CustomerId == customerid) > 0)
+            try
             {
-                return true;
+                if (Customers.RemoveAll(item => item.CustomerId == customerid) > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch(CustomerException)
             {
-                return false;
+                throw;
             }
-
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
      
