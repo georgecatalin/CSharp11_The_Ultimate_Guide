@@ -59,3 +59,8 @@
    - C# 9 and 10: Top level statements, File scope namespaces, Global using, Module initializer, Nullable reference types, Target-typed New expressions, Pattern Matching, Parameterless struct constructors, Records
 
    - C# 11: Raw string literals, List pattern, Slice pattern, Var pattern, File local types, Required members, Auto default structs, Ref fields
+
+## Commits by
+* George Calin
+* george.calin [at] gmail.com
+* Connect me on LinkedIn: https://www.linkedin.com/in/cgeorge1978/
