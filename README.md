@@ -1,4 +1,4 @@
-# C# 12 - Ultimate Guide - Beginner to Advanced | Master class
+# C# - Ultimate Guide
 * code practice for Udemy course "C# 12 - Ultimate Guide - Beginner to Advanced | Master class" authored by Harsha Vardhan.
 * course url: https://www.udemy.com/course/c-sharp-oop-ultimate-guide-project-master-class/  
 
