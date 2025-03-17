@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject.Presentation", "BankProject.Presentation\BankProject.Presentation.csproj", "{D68709DB-BD25-46FF-93AE-5D869B66DAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject.Exceptions", "..\BankProject.Exceptions\BankProject.Exceptions.csproj", "{8E7CE1AB-1934-4AB8-895C-2448F11C083A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject.Configuration", "..\BankProject.Configuration\BankProject.Configuration.csproj", "{6532F48D-6ADC-47C5-9470-43FD929897C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject.Entities", "..\BankProject.Entities\BankProject.Entities.csproj", "{FAAB51E3-86DC-4789-A76A-B5B550600D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject.BusinessLogicLayer", "..\BankProject.BusinessLogicLayer\BankProject.BusinessLogicLayer.csproj", "{5D2BA567-E789-468B-A766-278CC98BBFC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject.DataAccessLayer", "..\BankProject.DataAccessLayer\BankProject.DataAccessLayer\BankProject.DataAccessLayer.csproj", "{D44408F9-6C76-4E37-9AE8-320A68CD29F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D68709DB-BD25-46FF-93AE-5D869B66DAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68709DB-BD25-46FF-93AE-5D869B66DAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68709DB-BD25-46FF-93AE-5D869B66DAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68709DB-BD25-46FF-93AE-5D869B66DAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7CE1AB-1934-4AB8-895C-2448F11C083A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7CE1AB-1934-4AB8-895C-2448F11C083A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7CE1AB-1934-4AB8-895C-2448F11C083A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7CE1AB-1934-4AB8-895C-2448F11C083A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6532F48D-6ADC-47C5-9470-43FD929897C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6532F48D-6ADC-47C5-9470-43FD929897C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6532F48D-6ADC-47C5-9470-43FD929897C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6532F48D-6ADC-47C5-9470-43FD929897C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAB51E3-86DC-4789-A76A-B5B550600D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAB51E3-86DC-4789-A76A-B5B550600D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAB51E3-86DC-4789-A76A-B5B550600D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAB51E3-86DC-4789-A76A-B5B550600D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2BA567-E789-468B-A766-278CC98BBFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2BA567-E789-468B-A766-278CC98BBFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2BA567-E789-468B-A766-278CC98BBFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2BA567-E789-468B-A766-278CC98BBFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44408F9-6C76-4E37-9AE8-320A68CD29F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44408F9-6C76-4E37-9AE8-320A68CD29F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44408F9-6C76-4E37-9AE8-320A68CD29F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44408F9-6C76-4E37-9AE8-320A68CD29F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
