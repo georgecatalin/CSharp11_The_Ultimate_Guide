@@ -5,10 +5,11 @@ using BankProject.BusinessLogicLayer.BLLContracts;
 using BankProject.Exceptions;
 using BankProject.DataAccessLayer;
 using BankProject.DataAccessLayer.DALContracts;
+using BankProject.Configuration;
 
 namespace BankProject.BusinessLogicLayer
 {
-    public class CustomerBusinessLogicLayer 
+    public class CustomerBusinessLogicLayer : ICustomerBusinessLogicLayer
     {
         #region Private Fields
         private ICustomerDataAccessLayer _customerDataAccessLayer;
@@ -90,6 +91,29 @@ namespace BankProject.BusinessLogicLayer
         {
             try
             {
+                List<Customer> allCustomers = CustomerDataAccessLayer.GetCustomers();
+
+                long maxCustomerCode = allCustomers.Max(x => x.CustomerCode);
+
+                long maxCustomerCode_ver_1 = 0;
+
+                foreach (var item in allCustomers)
+                {
+                    if(item.CustomerCode > maxCustomerCode_ver_1)
+                    {
+                        maxCustomerCode_ver_1 = item.CustomerCode;
+                    }
+                }
+
+                if( allCustomers.Count >=1)
+                {
+                    customer.CustomerCode = maxCustomerCode + 1;
+                }
+                else
+                {
+                    customer.CustomerCode = Settings.BaseCustomerNumber + 1;
+                }
+
                 return CustomerDataAccessLayer.AddCustomer(customer);
             }
             catch(CustomerException)
@@ -110,7 +134,18 @@ namespace BankProject.BusinessLogicLayer
         /// <returns>Returns true if the customer was updated successfully, false if the customer was not updated successfully</returns>
         public bool UpdateCustomer(Customer customer)
         {
-
+            try
+            {
+                return CustomerDataAccessLayer.UpdateCustomer(customer);
+            }
+            catch(CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -120,7 +155,18 @@ namespace BankProject.BusinessLogicLayer
         /// <returns>Returns true if the customer as deleted successfully, false if the customer was not deleted successfully   </returns>
         public bool DeleteCustomer(Guid customerid)
         {
-
+            try
+            {
+                return CustomerDataAccessLayer.DeleteCustomer(customerid);
+            }
+            catch(CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
         #endregion
     }
