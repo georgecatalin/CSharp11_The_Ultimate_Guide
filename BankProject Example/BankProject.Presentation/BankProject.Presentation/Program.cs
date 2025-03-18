@@ -53,12 +53,9 @@ namespace BankProject.Presentation
                     {
                         case 1: CustomersMenu(); break;
                         case 2: AccountsMenu(); break;
-                        case 3: //TO DO: Display funds transfer menu
-                            break;
-                        case 4: //TO DO: Display funds transfer statement menu
-                            break;
-                        case 5: //TO DO: Display account statement menu
-                            break;
+                        case 3: FundsTransferMenu();break;
+                        case 4: DisplayFundsTransferStatement();break;
+                        case 5: DisplayAccountStatement(); break;
                     }
 
                 } while (mainMenuChoice != 0);
@@ -127,5 +124,19 @@ namespace BankProject.Presentation
             } while (accountsMenuChoice != 0);
         }
 
+        static void FundsTransferMenu()
+        {
+            //do stuff
+        }
+
+        static void DisplayFundsTransferStatement()
+        {
+            //do stuff
+        }
+
+        static void DisplayAccountStatement()
+        {
+            //do stuff
+        }
     }
 }
