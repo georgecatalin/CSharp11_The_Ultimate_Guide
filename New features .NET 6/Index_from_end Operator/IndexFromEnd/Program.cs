@@ -9,7 +9,7 @@
             //accessing the last element of the list in the previous versions of C# before C# 6.0
             Console.WriteLine(list[list.Count - 1]);
 
-            //accessing the last element of the list in the later versions of C# post C# 6.0  with the index-from-end carot operator
+            //accessing the last element of the list in the later versions of C# post C# 6.0  with the index-from-end caret operator
             Console.WriteLine(list[^1]); // 2011 -> the last element has ^1
             Console.WriteLine(list[^2]); // 1978
             Console.WriteLine(list[^3]); // 1977
