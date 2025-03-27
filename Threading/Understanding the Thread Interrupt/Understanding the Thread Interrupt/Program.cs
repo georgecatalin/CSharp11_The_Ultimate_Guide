@@ -1,4 +1,6 @@
-﻿namespace MultipleThreadedApplication
+﻿/* if the thread object being interrupted is sleeping , then it is woken up and interrupted */
+
+namespace MultipleThreadedApplication
 {
     public class Counter
     {
