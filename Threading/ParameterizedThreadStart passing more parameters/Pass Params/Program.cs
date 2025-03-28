@@ -1,17 +1,35 @@
-﻿/* One way to pass parameters to threads is by using lambda expressions with the delegate ThreadStart()*/
+﻿/* When the need arises to pass multiple parameters to a starting thread, this can be achieved through the creation of a class
+ * and passing at once all the parameters as properties of that class
+ * */
 
 namespace MultipleThreadedApplication
 {
+
+    public class MaxCount
+    {
+        public int maxCounter { get; set; }
+    }
+
+
+
     public class Counter
     {
-        public void CountUp(int count)
+        public void CountUp(object? count)
         {
             try
             {
                 Console.WriteLine("Count-up Thread has started");
                 Thread.Sleep(1000);
 
-                for (int i = 0; i < count; i++)
+                MaxCount? counter = (MaxCount?)count;
+
+                if(counter == null)
+                {
+                    return;
+                }
+
+
+                for (int i = 0; i < counter.maxCounter; i++)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"i = {i.ToString()},");
@@ -27,15 +45,20 @@ namespace MultipleThreadedApplication
             }
         }
 
-        public void CountDown(int count)
+        public void CountDown(object? count)
         {
          
-   
                 Console.WriteLine("Count-down Thread has started");
                 Thread.Sleep(1000);
 
+                MaxCount? counter = (MaxCount?)count;
 
-                for (int i = count; i >= 0; i--)
+                if(counter == null)
+                  {
+                return; 
+                  }
+
+                for (int i = counter.maxCounter; i >= 0; i--)
                 {
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine($"j = {i.ToString()},");
@@ -63,25 +86,27 @@ namespace MultipleThreadedApplication
 
             Counter counter = new Counter();
 
-            // There is a way to pass parameters when creating the thread using a lambda expression
-            ThreadStart threadStart_cup = new ThreadStart(() => { counter.CountUp(100); });
+            // There is a way to pass parameters when creating the thread using ParameterizedThreadStart
+            ParameterizedThreadStart threadStart_cup = new ParameterizedThreadStart(counter.CountUp);
 
             Thread cup_thread = new Thread(threadStart_cup) { Name = "Count-Up Thread", Priority = ThreadPriority.BelowNormal }; //initialization is done with object initializer instead separately
 
             // At the time of its generation by the OS, each thread gets a unique id for its lifetime, and this is available as a get withManagedThreadId property
             Console.WriteLine($"The status of {cup_thread.Name} ({cup_thread.ManagedThreadId}) is {cup_thread.ThreadState}.");
 
-            cup_thread.Start();
+            MaxCount count = new MaxCount() { maxCounter = 100 };
+            cup_thread.Start(count); // we pass the entire object of the class to the Start() method
             Console.WriteLine($"The status of {cup_thread.Name} is {cup_thread.ThreadState}.");
 
-            // There is a way to pass parameters when creating the thread using a lambda expression
-            ThreadStart threadStart_cdown = new ThreadStart(() => { counter.CountDown(100); });
+            // There is a way to pass parameters when creating the thread using ParameterizedThreadStart
+            ParameterizedThreadStart threadStart_cdown = new ParameterizedThreadStart(counter.CountDown);
             Thread cdown_thread = new Thread(threadStart_cdown) { Name= "Count-Down Thread" , Priority = ThreadPriority.AboveNormal}; //initialization is done with object initializer instead separately
 
           
             Console.WriteLine($"The status of {cdown_thread.Name} ({cdown_thread.ManagedThreadId}) is {cdown_thread.ThreadState}.");
 
-            cdown_thread.Start();
+            MaxCount counter1 = new MaxCount() { maxCounter = 100 };
+            cdown_thread.Start(counter1); // we pass the entire object of the class to the Start() method
             Console.WriteLine($"The status of {cdown_thread.Name} is {cdown_thread.ThreadState}.");
 
             Thread.Sleep(2000); // WaitSleepJoin for 2 seconds
