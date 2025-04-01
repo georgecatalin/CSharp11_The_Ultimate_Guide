@@ -1,0 +1,17 @@
+The drawbacks of Threads against the use of TPL (Task Parallel Library) split in:
+
+1. Complexity
+To use threading, the developer has to create the threads, and manage aspects like thread synchronisation and thread signaling which makes the code prone to errors and exceptions.
+
+
+2. Scalability
+Threads are heavyweight elements, opposite to Tasks. Threads consume resource like CPU and memory.
+
+3. Cancellation
+Cancellation is the action of gracefully stoping an ongoing operation, and this is achieved with difficulty and inefficiently with Threads
+
+4. Async programming
+By default Threads block themselves on the I/O resource they consume.
+
+4. Parallelization
+With Threads it is not possible to achieve parallelization of work.
