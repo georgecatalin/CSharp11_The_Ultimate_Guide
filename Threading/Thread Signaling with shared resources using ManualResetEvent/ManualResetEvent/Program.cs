@@ -75,10 +75,11 @@ namespace UsingManualResetEventWithSharedResources
                     if (Shared.Buffer.Count == 0)
                     {
                         Console.WriteLine("The buffer is empty. Waiting for a signal from the producer...");
-                        Shared.ConsumerEvent.Reset(); //set the thread to unsignaled 
-
+                        Shared.ConsumerEvent.Reset(); //set the thread to unsignaled  
                         Shared.ConsumerEvent.WaitOne(); //block the thread to waint for a signal from the producer thread
                     }
+
+                   
 
                     Console.WriteLine($"{Thread.CurrentThread.Name} is consuming the data.");
                     Thread.Sleep(5000); //introduce an artificial latency of 2.5 seconds
