@@ -1,6 +1,9 @@
 ﻿using System.Diagnostics;
 using System.Threading.Tasks;
 
+/* ************************************************************************
+ * instead of calling the wait() method for each task object, one can call the static Task.WaitAll() method for wait for all tasks started from that thread to be completed
+ * * ********************************************************************** */
 
 namespace TaskFactoryStartNewExample
 {
@@ -54,28 +57,31 @@ namespace TaskFactoryStartNewExample
                 UpCount upCount = new UpCount();
                 DownCount downCount = new DownCount();
 
-                CountdownEvent countdown = new CountdownEvent(2);
-
                 Action<int> doCount = upCount.Count; // with Action delegate definition through method name
                 Task upTask = Task.Factory.StartNew(() =>
                 {
                     doCount(50);
-                    countdown.Signal();
                 }
                     );
 
                 Task downTask = Task.Factory.StartNew(() =>     //with lambda expression
                 {
                     downCount.Count(50);
-                    countdown.Signal();
+     
                 });
 
-                countdown.Wait(); // do not execute code after this point before getting the signalling that the countDownEvent is O
+                /*  public static void WaitAll(params Task[] tasks)
+                 can be called either 
+                      Task.WaitAll(new Task[] {upTask, downTask}); or simply enumerating the task1 which will be joined in the array
+                     params means an enumeration of parameters in a variable number , it is used mostly for arrays passed as arguments
+                */
+
+                //Task.WaitAll(new Task[] {upTask, downTask});
+                Task.WaitAll(upTask, downTask);
+                
             }
         }
 
     }
 }
 
-//* Task object can be created either by using Task.Run() or Task.Factory.StartNew(). The advantage of Task.Factory.StartNew() is that it allows multiple parameters
-//to control upon the creation of the object. There is no guarantee that between multiple executions , it will take the same amount of time for the same block of code
