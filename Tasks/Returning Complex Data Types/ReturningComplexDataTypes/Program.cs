@@ -26,7 +26,7 @@ namespace GenericTasks
 
     public class DownCount
     {
-        public int Count(int count)
+        public ComplexUserType Count(int count)
         {
             Console.WriteLine("Started the down count from {0}", count);
 
@@ -38,7 +38,7 @@ namespace GenericTasks
             }
             Console.WriteLine("Completed the down count");
 
-            return sum;
+            return new ComplexUserType() { Sum = sum };
         }
     }
 
@@ -66,14 +66,14 @@ namespace GenericTasks
                 return func2(50);
             });
 
-            Task<int> task3 = Task.Factory.StartNew(() => // I used the modern way of a lambda expression
+            Task<ComplexUserType> task3 = Task.Factory.StartNew(() => // I used the modern way of a lambda expression
             {
                 return downCount.Count(50);
             });
 
             Task.WaitAll(upTask, task2, task3);
 
-            Console.WriteLine("The values returned are: {0} , \t {1}, \t {2}", upTask.Result, task2.Result, task3.Result);
+            Console.WriteLine("The values returned are: {0} , \t {1}, \t {2}", upTask.Result, task2.Result, task3.Result.Sum);
 
             Console.ReadKey();
         }
@@ -81,3 +81,8 @@ namespace GenericTasks
 }
 
 // the result returned from the task is obtain through a get only taskobject.Result property
+
+public class ComplexUserType
+{
+    public int Sum { get; set; }
+}
