@@ -12,6 +12,11 @@ Advantages of the TPL
 1. Abstraction -> simplify the low level details associated with MultiThreading management.
 2. Efficiency -> achieved with the Task Scheduler
 3. Cancellation -> graceful termination of execution
-4. Asynchronous programming
+4. Asynchronous programming -> for accessing I/O like reading and writing files, network requests
 5. Task continuation -> establish methods to execute when the task completes, gets an exception
 6. Parallelism in execution
+
+Task Class
+The unit of work in the TPL is the task. A task represents the operation or method executed in concurrent or parallel mode with other tasks.
+
+Task execution is managed by the Task Scheduler.
