@@ -1,0 +1,17 @@
+Taks Parallel Library (TPL) is the response to the drawbacks of the original Threading concepts.
+TPL is an API (set of classes and methods) that provide functionality to support concurrency, parallelism and asynchronous programming.
+TPL uses a high level implementation of Threads, using Thread Pool. Tasks are placed in Queue and managed to fit into the Thread Pool.
+
+Stages of tasks:
+1. Task creation
+2. Task Scheduling
+3. Thread Pool
+4. Concurrency
+
+Advantages of the TPL
+1. Abstraction -> simplify the low level details associated with MultiThreading management.
+2. Efficiency -> achieved with the Task Scheduler
+3. Cancellation -> graceful termination of execution
+4. Asynchronous programming
+5. Task continuation -> establish methods to execute when the task completes, gets an exception
+6. Parallelism in execution
