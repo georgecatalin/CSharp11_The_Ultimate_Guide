@@ -1,0 +1,1 @@
+Threading can be significantly more complex to manage than tasks. You have to deal with low-level thread creation, synchronization primitives (e.g., locks, mutexes) which can lead to more error-prone code.
