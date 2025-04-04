@@ -1,0 +1,10 @@
+Best practices when using async and await
+1. never use 'async void' -> async methods return Task or Task<T> objects
+2. handle exceptions in async methods with care cause they propagate to the upper layer and crash the application
+3. always it is a good practice to use async methods when dealing with I/O operations like:
+	files handling,
+        network(api) requests
+        database connections
+4. do not use Task.Run() and Task.Factory.StartNew() when creating new tasks inside async methods. Use Task.Run() and Task.Factory.StartNew() when when dealing with CPU operations
+5. measure performance and optimize
+6. create overloads of the methods so to also support parameters for CancellationTokens to gracefully cancel tasks
