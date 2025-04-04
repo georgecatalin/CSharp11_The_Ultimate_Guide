@@ -1,6 +1,8 @@
 # C# - Ultimate Guide
 ### Context
 * I am in a need to keep myself updated with the last changes and the evolution of the C# programming language which I used only seldom after 2020 (there is 5 years on), whilst polishing my skills with learning stuff I did not practice at that time
+
+### Content
 * code practice for Udemy course *"C# 12 - Ultimate Guide - Beginner to Advanced | Master class"* authored by Harsha Vardhan. 
 * course url: https://www.udemy.com/course/c-sharp-oop-ultimate-guide-project-master-class/
 
