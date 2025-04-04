@@ -1,5 +1,5 @@
 # C# - Ultimate Guide
-* code practice for Udemy course "C# 12 - Ultimate Guide - Beginner to Advanced | Master class" authored by Harsha Vardhan.
+* code practice for Udemy course "C# 12 - Ultimate Guide - Beginner to Advanced | Master class" authored by Harsha Vardhan. I am in a need to keep myself updated with the last changes and evolution of the C# programming language which I used only seldom after 2020 (there is 5 years on), whilst polishing my skills with learning new stuffs
 * course url: https://www.udemy.com/course/c-sharp-oop-ultimate-guide-project-master-class/
 
   <img src="20250326_131244_qTK.png" alt="Course Screenshot" width="900">
