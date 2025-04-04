@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlicePattern", "SlicePattern.csproj", "{73DA39F2-4590-471E-A35C-EFBC521F5E41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73DA39F2-4590-471E-A35C-EFBC521F5E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DA39F2-4590-471E-A35C-EFBC521F5E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DA39F2-4590-471E-A35C-EFBC521F5E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DA39F2-4590-471E-A35C-EFBC521F5E41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C726262-F1A3-4AE0-B14A-51B2284EDEF4}
+	EndGlobalSection
+EndGlobal
