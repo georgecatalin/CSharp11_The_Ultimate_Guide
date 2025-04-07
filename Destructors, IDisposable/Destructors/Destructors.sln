@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destructors", "Destructors.csproj", "{DEC7A3A4-D1EC-42C5-8836-BDA723FA8DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary4", "..\ClassLibrary4\ClassLibrary4.csproj", "{81647D16-5F67-4A68-AEE2-410924F46EB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEC7A3A4-D1EC-42C5-8836-BDA723FA8DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC7A3A4-D1EC-42C5-8836-BDA723FA8DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC7A3A4-D1EC-42C5-8836-BDA723FA8DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC7A3A4-D1EC-42C5-8836-BDA723FA8DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81647D16-5F67-4A68-AEE2-410924F46EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81647D16-5F67-4A68-AEE2-410924F46EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81647D16-5F67-4A68-AEE2-410924F46EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81647D16-5F67-4A68-AEE2-410924F46EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
