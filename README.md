@@ -1,6 +1,6 @@
 # C# - Ultimate Guide
 ## Rating
-After a four-year break from C#, I enrolled in the "C# OOP Ultimate Guide Project Master Class" on Udemy to refresh my skills and fill in some foundational gaps. The course starts with a solid overview of C# basics, which was great for reorienting myself. It then delves into object-oriented programming concepts like inheritance, polymorphism, and interfaces, reinforcing my understanding with practical examples.
+After a four-year break from C#, I enrolled in this course on Udemy to refresh my skills and fill in some foundational gaps. The course starts with a solid overview of C# basics, which was great for reorienting myself. It then delves into object-oriented programming concepts like inheritance, polymorphism, and interfaces, reinforcing my understanding with practical examples.
 
 One aspect I appreciated was the hands-on project that ties everything together. Building a real-world application helped solidify the concepts and made the learning process engaging. The instructor's explanations are clear, and the pacing is just right—not too fast to be overwhelming, nor too slow to be tedious.
 
