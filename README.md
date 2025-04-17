@@ -5,7 +5,7 @@ After a four-year break from C#, I enrolled in this course on Udemy to refresh m
 One aspect I appreciated was the hands-on project that ties everything together. Building a real-world application helped solidify the concepts and made the learning process engaging. The instructor's explanations are clear, and the pacing is just right—not too fast to be overwhelming, nor too slow to be tedious.
 
 ### Content
-* code practice for Udemy course *"C# 12 - Ultimate Guide - Beginner to Advanced | Master class"* authored by Harsha Vardhan. 
+* code practice for Udemy course **"C# 12 - Ultimate Guide - Beginner to Advanced | Master class"** authored by Harsha Vardhan. 
 * course url: https://www.udemy.com/course/c-sharp-oop-ultimate-guide-project-master-class/
 
   <img src="20250326_131244_qTK.png" alt="Course Screenshot" width="900">
