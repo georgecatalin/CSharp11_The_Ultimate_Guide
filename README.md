@@ -1,6 +1,8 @@
 # C# - Ultimate Guide
-### Context
-* I am in a need to keep myself updated with the last changes and the evolution of the C# programming language which I used only seldom after 2020 (there is 5 years on), whilst polishing my skills with learning stuff I did not practice at that time
+## Rating
+After a four-year break from C#, I enrolled in the "C# OOP Ultimate Guide Project Master Class" on Udemy to refresh my skills and fill in some foundational gaps. The course starts with a solid overview of C# basics, which was great for reorienting myself. It then delves into object-oriented programming concepts like inheritance, polymorphism, and interfaces, reinforcing my understanding with practical examples.
+
+One aspect I appreciated was the hands-on project that ties everything together. Building a real-world application helped solidify the concepts and made the learning process engaging. The instructor's explanations are clear, and the pacing is just right—not too fast to be overwhelming, nor too slow to be tedious.
 
 ### Content
 * code practice for Udemy course *"C# 12 - Ultimate Guide - Beginner to Advanced | Master class"* authored by Harsha Vardhan. 
